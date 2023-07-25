@@ -1,0 +1,70 @@
+﻿body {
+    font-family: 'Times New Roman', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #395BBF;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom:solid black;
+}
+
+
+#getUsers {
+    background-color: #D96A6D;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    
+}
+
+    #getUsers:active {
+        background-color: #FF982E;
+        box-shadow: 0 2px #666;
+        transform: translateY(1px);
+    }
+
+
+#title{
+    margin:1.5px;
+    padding:5px;
+    font: bold  20px italic ;
+}
+#user {
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    gap: 30px;
+}
+
+.user-card {
+    border: 1px solid grey;
+    padding: 5px;
+    text-align: center;
+}
+
+#id {
+    border: 5px solid black;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);       
+    display: none;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
